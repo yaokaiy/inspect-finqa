@@ -1,0 +1,31 @@
+title: "FinQA: Numerical Reasoning over Financial Data"
+description: |
+  Question answering over pages of companies' financial reports, written by
+  financial experts. Each question comes with the page's text and a table,
+  and its gold answer is a numerical reasoning program of arithmetic and
+  table operations. The model writes a program, which is executed and scored
+  by execution accuracy: the result must equal the gold result to 5 decimal
+  places. Human experts reach 91.16% execution accuracy.
+arxiv: https://arxiv.org/abs/2109.00122v3
+group: Reasoning
+contributors:
+  - yaokaiy
+version: "1-A"
+tasks:
+  - name: finqa
+    dataset_samples: 1147
+    human_baseline:
+      metric: accuracy
+      score: 0.9116
+      source: https://arxiv.org/abs/2109.00122v3
+
+external_assets:
+  - type: direct_url
+    source: "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/test.json"
+    fetch_method: other
+    state: pinned
+    comment: Read at runtime by json_dataset from a commit-pinned URL
+
+metadata:
+  requires:
+    internet: true

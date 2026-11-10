@@ -1,0 +1,30 @@
+finqa
+Copyright (c) 2026 yaokaiy
+
+This product is licensed under the MIT License (see `LICENSE`). It includes
+code and data from the third-party projects below, also under the MIT
+License. Their license texts are in `third-party-licenses/`.
+
+---
+
+FinQA
+Copyright (c) 2021 Zhiyu Chen
+License: MIT (third-party-licenses/FinQA-LICENSE.txt)
+Source: https://github.com/czyssrs/FinQA/tree/0f16e2867befa6840783e58be38c9efb9229d742
+
+Included in:
+  - src/finqa/reference_executor.py: adapted from code/evaluate/evaluate.py
+  - src/finqa/finqa.py: three records from dataset/train.json, used as
+    few-shot examples
+  - tests/finqa/test_finqa.py: one record from dataset/test.json
+
+---
+
+inspect-evals-template
+Copyright (c) 2025
+License: MIT (third-party-licenses/inspect-evals-template-LICENSE.txt)
+Source: https://github.com/Generality-Labs/inspect-evals-template/tree/bdc06e5f4b5fe903cc19f00868ecac3603ddb4fd
+
+Included in: the repository scaffolding this project was created from,
+including the files listed in MANAGED_FILES.md, src/utils/ and
+tests/conftest.py.
